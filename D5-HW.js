@@ -71,8 +71,13 @@
 /* Ex.1
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
 */
-    const dice = () => Math.floor(Math.random() * 6)+1
-         console.log(dice())
+
+
+    // const dice = () => Math.floor(Math.random() * 6)+1
+    //      console.log(dice())
+
+
+
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
@@ -168,16 +173,20 @@
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
 
-    const howManyDays = function(day month){
-
-          
-
-    }
+    // const howManyDays = function(date1, date2){
+    //     // round to the nearest whole number         // Sum for 1 day
+    //     return console.log("It has been " + Math.round((new Date(date2)-new Date(date1))/(1000*60*60*24)) + " days Since you started Strive School");
+    // }
+    //   howManyDays(('March 08, 2021 03:24:00'), ('March 12, 2021 03:24:00'));
 
 
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
+
+      // const isTodayMyBirthday = () => console.log(new Date() == ('September 4, 2021') ? true : false)
+
+      // isTodayMyBirthday()
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
