@@ -194,11 +194,13 @@
 /* Ex.11
    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
-
+// String parameter declared but never read?
+//Cant access 'movies' object before initialisation
      const deleteProp = function(obj, string){
-          delete obj.string
+          delete movies[obj].string
+              return movies[obj]
 
-      return obj
+           
       }
 
       console.log(deleteProp([0]))
