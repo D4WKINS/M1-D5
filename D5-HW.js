@@ -81,6 +81,7 @@
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
+
     // const whoIsBigger = function(n1,n2){
     //   return console.log((n1 > n2) ? n1 : n2)
     // }
@@ -100,11 +101,8 @@
 */
 
     // const deleteOne = function(string, boolean){
-  
     //    return console.log(boolean === true ? string.slice(1) : string.slice(0,-1))
-
     // }
-
     // deleteOne("Reloaded", false)
 
 /* Ex.5
@@ -151,7 +149,9 @@
         values: [3, 3, 4]
     }
 */
-//Make this shorter
+
+
+
   //  const rollTheDices = (function(times){
 
   //    const rollResults ={
@@ -165,8 +165,8 @@
   //       rollResults.sum = parseInt(rollResults.sum += eachVal)
   //   }
   //     return console.log(rollResults)
-  //  })(4) 
-   //Self Invoked function...
+  //  })(4) //  Self Invoked function...
+
 
 
 /* Ex.9
@@ -196,10 +196,11 @@
 */
 
      const deleteProp = function(obj, string){
-      const selectObject = this.movies[obj]
-      return selectObject
+          delete obj.string
+
+      return obj
       }
-      
+
       console.log(deleteProp([0]))
 
 /* Ex.12 
@@ -263,6 +264,15 @@
 /* Ex.23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
 */
+
+    const isItPrime = function(num) {
+      for(var i = 2; i < num; i++)
+      if(num % i === 0) return console.log(false);
+    return console.log(num > 1);
+    }
+      isItPrime(24)
+
+
 
 /* This movies array is used throughout the exercises. Please don't change it :)  */
 const movies = [
